@@ -5,7 +5,7 @@ This package is a modification of the official packages of unitree. Is completel
 
 Basic message function: `unitree_legged_msgs`
 
-Software development kit by unitree: `unitree_legged_sdk`
+Software development kit by unitree (modified): `unitree_legged_sdk`
 
 The interface between ROS and real robot: `unitree_legged_real`
 
