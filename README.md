@@ -17,9 +17,13 @@ Is recommended to run this package in Ubuntu 18.04 and ROS melodic environment.
 
 # Installation
 Just have to clone the repository in your workspace:
+
 `cd ~/catkin_ws/src
-git clone 
+
+git clone https://github.com/Taucrates/Go1_ros_to_real.git
+
 cd ..
+
 catkin_make`
 
 # Run the package
