@@ -1,5 +1,5 @@
 # Introduction
-This package is a modification of the official packages of unitree. Is completely functional, and is able to control the robot sending Twist messages to the topic /cmd_vel.
+This package is a modification of the official packages of unitree. Is completely functional, and is able to control the movement (x, y, yaw) of the robot Go1, sending Twist messages to the topic /cmd_vel. The package include a [keyboard controller](https://github.com/methylDragon/teleop_twist_keyboard_cpp) to operate the Go1.
 
 ## Packages:
 
