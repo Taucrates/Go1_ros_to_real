@@ -1,53 +1,21 @@
-Packages Version: v3.5.0
-
 # Introduction
-This package can send control command to real robot from ROS. You can do low-level control(namely control all joints on robot) and high-level control(namely control the walking direction and speed of robot).
-
-This version is suitable for unitree_legged_sdk v3.5.1, namely Go1 robot. 
+This package is a modification of the official packages of unitree. Is completely functional, and is able to control the robot sending Twist messages to the topic /cmd_vel.
 
 ## Packages:
 
 Basic message function: `unitree_legged_msgs`
 
+Software development kit by unitree: `unitree_legged_sdk`
+
 The interface between ROS and real robot: `unitree_legged_real`
 
 ## Environment
-We recommand users to run this package in Ubuntu 18.04 and ROS melodic environment
+Is recommended to run this package in Ubuntu 18.04 and ROS melodic environment.
 
 # Dependencies
-* [unitree_legged_sdk](https://github.com/unitreerobotics): v3.5.1
+* lcm 1.4.0
 
-# Configuration
-Before compiling this package, users have to download unitree_legged-sdk v.3.5.1 to `~/catkin_ws/src` folder, which is the same folder where you put this package into
-
-# Build
-You can use catkin_make to build ROS packages. First copy the package folder to `~/catkin_ws/src`, then:
-```
-cd ~/catkin_ws
-catkin_make
-```
-
-# Setup the net connection
-First, please connect the network cable between your PC and robot. Then run `ifconfig` in a terminal, you will find your port name. For example, `enx000ec6612921`.
-
-Then, open the `ipconfig.sh` file under the folder `unitree_legged_real`, modify the port name to your own. And run the following commands:
-```
-sudo chmod +x ipconfig.sh
-sudo ./ipconfig.sh
-```
-If you run the `ifconfig` again, you will find that port has `inet` and `netmask` now.
-In order to set your port automatically, you can modify `interfaces`:
-```
-sudo gedit /etc/network/interfaces
-```
-And add the following 4 lines at the end:
-```
-auto enx000ec6612921
-iface enx000ec6612921 inet static
-address 192.168.123.162
-netmask 255.255.255.0
-```
-Where the port name have to be changed to your own.
+# Installation
 
 # Run the package
 You can control your real Go1 robot from ROS by this package.
