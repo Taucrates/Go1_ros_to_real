@@ -17,7 +17,10 @@ Is recommended to run this package in Ubuntu 18.04 and ROS melodic environment.
 
 # Installation
 Just have to clone the repository in your workspace:
-
+`cd ~/catkin_ws/src
+git clone 
+cd ..
+catkin_make`
 
 # Run the package
 You can control your real Go1 robot from ROS by this package.
