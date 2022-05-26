@@ -16,6 +16,8 @@ Is recommended to run this package in Ubuntu 18.04 and ROS melodic environment.
 * lcm 1.4.0
 
 # Installation
+Just have to clone the repository in your workspace:
+
 
 # Run the package
 You can control your real Go1 robot from ROS by this package.
