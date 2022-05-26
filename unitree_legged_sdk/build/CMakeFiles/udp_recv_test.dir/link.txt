@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -fPIC  -rdynamic CMakeFiles/udp_recv_test.dir/examples/multi_pc_udp_recv.cpp.o  -o udp_recv_test  -L/home/tonitauler/unitree_ws/src/unitree_legged_sdk/lib  -L/usr/local/lib -Wl,-rpath,/home/tonitauler/unitree_ws/src/unitree_legged_sdk/lib:/usr/local/lib: -pthread -lunitree_legged_sdk_amd64 -llcm 
