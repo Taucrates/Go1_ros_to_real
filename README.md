@@ -5,7 +5,7 @@ This package is a modification of the official packages of unitree. Is completel
 
 Basic message function: `unitree_legged_msgs`
 
-Software development kit by unitree (modified): `unitree_legged_sdk`
+Software development kit by unitree (modified): `[unitree_legged_sdk](https://github.com/unitreerobotics/unitree_legged_sdk)`
 
 The interface between ROS and real robot: `unitree_legged_real`
 
@@ -13,7 +13,20 @@ The interface between ROS and real robot: `unitree_legged_real`
 Is recommended to run this package in Ubuntu 18.04 and ROS melodic environment.
 
 # Dependencies
-* lcm 1.4.0
+* [Boost](http://www.boost.org) (version 1.5.4 or higher)
+* [CMake](http://www.cmake.org) (version 2.8.3 or higher)
+* [LCM](https://lcm-proj.github.io) (version 1.4.0 or higher)
+* [g++](https://gcc.gnu.org/) (version 8.3.0 or higher)
+
+LCM installation:
+```bash
+cd lcm-x.x.x
+mkdir build
+cd build
+cmake ../
+make
+sudo make install
+```
 
 # Installation
 Just have to clone the repository in your workspace:
